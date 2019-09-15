@@ -2,6 +2,7 @@
 import os
 import tkinter as tk
 from tkinter import messagebox
+import images
 
 class MyFrame(tk.Frame):
     def __init__(self, parent):
@@ -34,8 +35,10 @@ class MyFrame(tk.Frame):
 
         toolbar = tk.Frame(self, bd=1, relief=tk.RAISED)
 
+        #simplest
         img_exit = tk.PhotoImage(file=os.path.join('icons', 'exit.png'))
-        img_info = tk.PhotoImage(file=os.path.join('icons', 'info.png'))
+        #wxPython in action
+        img_info = images.getNewImage()
 
         exitButton = tk.Button(toolbar,width=20, image=img_exit, relief=tk.FLAT, command=self.OnCloseMe)
         infoButton = tk.Button(toolbar,width=20, image=img_info, relief=tk.FLAT, command=self.OnAbout)
