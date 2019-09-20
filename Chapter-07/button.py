@@ -2,8 +2,8 @@
 import tkinter as tk
 from tkinter import ttk
 
-class ComboBoxFrame(tk.Frame):
-    def __init__(self, ):
+class ButtonFrame(tk.Frame):
+    def __init__(self, parent):
         super().__init__()
 
         panel = tk.Frame()
@@ -18,7 +18,7 @@ def main():
     app = tk.Tk()
     app.geometry("300x100")
     app.title('Button Example')
-    frame = ComboBoxFrame()
+    ButtonFrame(app)
     app.mainloop()
     
 if __name__ == '__main__':
