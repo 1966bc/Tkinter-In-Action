@@ -4,9 +4,10 @@ from tkinter import ttk
 
 
 class ComboBoxFrame(tk.Frame):
-    def __init__(self, ):
+    def __init__(self, app):
         super().__init__()
-       
+
+        
         panel = tk.Frame()
 
         sampleList = ['zero', 'one', 'two', 'three', 'four', 'five',
@@ -20,11 +21,13 @@ class ComboBoxFrame(tk.Frame):
         panel.pack(fill=tk.BOTH, expand=1)
        
                
+    
+
 def main():
     app = tk.Tk()
     app.geometry("300x300")
     app.title('Combo Box Example')
-    frame = ComboBoxFrame()
+    ComboBoxFrame(app)
     app.mainloop()
     
 if __name__ == '__main__':

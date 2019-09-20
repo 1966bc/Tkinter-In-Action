@@ -2,7 +2,7 @@
 import tkinter as tk
 
 class ComboBoxFrame(tk.Frame):
-    def __init__(self, ):
+    def __init__(self, app):
         super().__init__()
 
         panel = tk.Frame()
@@ -15,7 +15,7 @@ def main():
     app = tk.Tk()
     app.geometry("150x200")
     app.title('Checkbox Example')
-    frame = ComboBoxFrame()
+    ComboBoxFrame(app)
     app.mainloop()
     
 if __name__ == '__main__':
