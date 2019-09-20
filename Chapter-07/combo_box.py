@@ -6,8 +6,7 @@ from tkinter import ttk
 class ComboBoxFrame(tk.Frame):
     def __init__(self, ):
         super().__init__()
-
-        
+       
         panel = tk.Frame()
 
         sampleList = ['zero', 'one', 'two', 'three', 'four', 'five',
@@ -21,8 +20,6 @@ class ComboBoxFrame(tk.Frame):
         panel.pack(fill=tk.BOTH, expand=1)
        
                
-    
-
 def main():
     app = tk.Tk()
     app.geometry("300x300")
