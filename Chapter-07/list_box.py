@@ -2,7 +2,7 @@
 import tkinter as tk
 from tkinter import ttk
 
-class ButtonFrame(ttk.Frame):
+class ListBoxFrame(ttk.Frame):
     def __init__(self, parent):
         super().__init__()
 
@@ -22,7 +22,7 @@ class ButtonFrame(ttk.Frame):
   
 def main():
     app = tk.Tk()
-    ButtonFrame(app)
+    ListBoxFrame(app)
     app.mainloop()
     
 if __name__ == '__main__':
