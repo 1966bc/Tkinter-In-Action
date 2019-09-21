@@ -19,6 +19,8 @@ class ListBoxFrame(ttk.Frame):
         for i in sampleList:
             listBox.insert(tk.END, i)
 
+        listBox.selection_set(3)            
+
   
 def main():
     app = tk.Tk()
