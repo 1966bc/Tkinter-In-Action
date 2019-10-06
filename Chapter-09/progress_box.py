@@ -10,8 +10,7 @@ class ProgressBar(ttk.Frame):
 
         self.elapsing = tk.StringVar()
         self.remaning = tk.StringVar()
-        self.text = tk.StringVar()
-
+        
         panel = ttk.Frame()
         tk.Label(panel, text="Time remaining",bg="lightgray").pack()
         self.progress_bar = ttk.Progressbar(panel, length = 200, orient=tk.HORIZONTAL)
@@ -38,10 +37,7 @@ class ProgressBar(ttk.Frame):
             self.elapsing.set(x)
             y = timedelta(seconds=(progressMax-count))
             self.remaning.set(y)
-
-   
-        
-                
+              
 def main():
     app = tk.Tk()
     app.geometry("350x150")
